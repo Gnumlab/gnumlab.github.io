@@ -3,7 +3,7 @@ title: Home
 ---
 # Hi, I'm [Your Name]
 
-I am a post-doc at University of Rome Tor Vergata. My research focuses on Algorithms Engineering, Algorithms and so on. My current interests are on data sketches .
+I am a post-doc at University of Rome Tor Vergata. My research focuses on Algorithms and Data Structures with a focus on Data Mining taks as well as Algorithms Engineering.
 
 **Links:** [Google Scholar](https://scholar.google.com) | [DBLP](https://dblp.org) | [GitHub](https://github.com)
 
