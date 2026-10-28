@@ -1,0 +1,241 @@
+
+
+@article{ARXIVbecchetti2026atour,
+  author       = {Luca Becchetti and
+                  Andrea Clementi and
+                  Luciano Gual{\`{a}} and
+                  Emanuele Natale and
+                  Luca Pep{\`{e}} Sciarria and
+                  Alessandro Straziota},
+  title        = {A Tour of Locality Sensitive Filtering on the Sphere},
+  journal      = {CoRR},
+  volume       = {abs/2604.24323},
+  year         = {2026},
+  url          = {https://doi.org/10.48550/arXiv.2604.24323},
+  doi          = {10.48550/ARXIV.2604.24323},
+  eprinttype   = {arXiv},
+  eprint       = {2604.24323},
+  timestamp    = {Tue, 19 May 2026 09:32:40 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2604-24323.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{ARXIVguala2026detecting,
+  author       = {Luciano Gual{\`{a}} and
+                  Simone Pellegrini and
+                  Luca Pep{\`{e}} Sciarria and
+                  Alessandro Straziota},
+  title        = {Detecting Large Quasi-cliques on Dynamic Networks},
+  journal      = {CoRR},
+  volume       = {abs/2606.05809},
+  year         = {2026},
+  url          = {https://doi.org/10.48550/arXiv.2606.05809},
+  doi          = {10.48550/ARXIV.2606.05809},
+  eprinttype   = {arXiv},
+  eprint       = {2606.05809},
+  timestamp    = {Sun, 05 Jul 2026 10:41:24 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2606-05809.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@INPROCEEDINGS{staccone2026efficient,
+  author={Staccone, Simone and Filippone, Salvatore and Pepè Sciarria, Luca},
+  booktitle={2026 34th Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP)}, 
+  title={Efficient Binary SpMV on GPUs via Binary Word Compression}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={33-40},
+  keywords={Matrices;Sparse matrices;Memory;Vectors;Arrays;Graphics processing units;Kernel;Poles and zeros;Standards;Conferences;Binary sparse matrix;SpMV;GPU;parallel computing;CUDA},
+  doi={10.23919/PDPCPS00030.2026.00013}}
+
+
+
+@misc{ARXIVbecchetti2025approximate,
+      title={Approximate $2$-hop neighborhoods on incremental graphs: An efficient lazy approach}, 
+      author={Luca Becchetti and Andrea Clementi and Luciano Gualà and Luca Pepè Sciarria and Alessandro Straziota and Matteo Stromieri},
+      year={2025},
+      eprint={2502.19205},
+      archivePrefix={arXiv},
+      primaryClass={cs.DS},
+      url={https://arxiv.org/abs/2502.19205}, 
+}
+
+@article{becchetti2025approximate,
+author = {Becchetti, Luca and Clementi, Andrea and Gual{\'a}, Luciano and Pep{\`e} Sciarria, Luca and Straziota, Alessandro and Stromieri, Matteo},
+title = {Approximate 2-hop Neighborhoods on Incremental Graphs: An Efficient Lazy Approach},
+year = {2025},
+issue_date = {July 2025},
+publisher = {VLDB Endowment},
+volume = {18},
+number = {11},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3749646.3749665},
+doi = {10.14778/3749646.3749665},
+abstract = {In this work, we propose, analyze and empirically validate a lazy-update approach to maintain accurate approximations of the 2-hop neighborhoods of dynamic graphs resulting from sequences of edge insertions.We first show that under random input sequences, our algorithm exhibits an optimal trade-off between accuracy and insertion cost: it only performs [EQUATION] (amortized) updates per edge insertion, while the estimated size of any vertex's 2-hop neighborhood is at most a factor ε away from its true value in most cases, regardless of the underlying graph topology and for any ε > 0.As a further theoretical contribution, we explore adversarial scenarios that can force our approach into a worst-case behavior at any given time t of interest. We show that while worst-case input sequences do exist, a necessary condition for them to occur is that the girth of the graph released up to time t be at most 4.Finally, we conduct extensive experiments on a collection of real, incremental social networks of different sizes, which typically have low girth. Empirical results are consistent with and typically better than our theoretical analysis anticipates. This further supports the robustness of our theoretical findings: forcing our algorithm into a worst-case behavior not only requires topologies characterized by a low girth, but also carefully crafted input sequences that are unlikely to occur in practice.Combined with standard sketching techniques, our lazy approach proves an effective and efficient tool to support key neighborhood queries on large, incremental graphs, including neighborhood size, Jaccard similarity between neighborhoods and, in general, functions of the union and/or intersection of 2-hop neighborhoods.},
+journal = {Proc. VLDB Endow.},
+month = jul,
+pages = {3937–3950},
+numpages = {14}
+}
+
+
+@misc{ARXIVclementi2025maintaining,
+      title={Maintaining $k$-MinHash Signatures over Fully-Dynamic Data Streams with Recovery}, 
+      author={Andrea Clementi and Luciano Gualà and Luca Pepè Sciarria and Alessandro Straziota},
+      year={2025},
+      eprint={2407.21614},
+      archivePrefix={arXiv},
+      primaryClass={cs.DS},
+      url={https://arxiv.org/abs/2407.21614}, 
+}
+
+@inproceedings{clementi2025maintaining,
+author = {Clementi, Andrea and Gual{\`a}, Luciano and Pep{\`e} Sciarria, Luca and Straziota, Alessandro},
+title = {Maintaining k-MinHash Signatures over Fully-Dynamic Data Streams with Recovery},
+year = {2025},
+isbn = {9798400713293},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3701551.3703491},
+doi = {10.1145/3701551.3703491},
+abstract = {We consider the task of performing Jaccard similarity queries over a large collection of items that are dynamically updated according to a streaming input model. An item here is a subset of a large universe U of elements. A well-studied approach to address this important problem in data mining is to design fast-similarity data sketches. In this paper, we focus on global solutions for this problem, i.e., a single data structure which is able to answer both Similarity Estimation and All-Candidate Pairs queries, while also dynamically managing an arbitrary, online sequence of element insertions and deletions received in input.We introduce and provide an in-depth analysis of a dynamic, buffered version of the well-known k-MinHash sketch. This buffered version better manages critical update operations thus significantly reducing the number of times the sketch needs to be rebuilt from scratch using expensive recovery queries. We prove that the buffered k-MinHash uses O(k {\l}og |U|) memory words per subset and that its amortized update time per insertion/deletion is O(k {\l}og |U|) with high probability. Moreover, our data structure can return the k-MinHash signature of any subset in O(k) time, and this signature is exactly the same signature that would be computed from scratch (and thus the quality of the signature is the same as the one guaranteed by the static k-MinHash).Analytical and experimental comparisons with the other, state-of-the-art global solutions for this problem given in [Bury et al.,WSDM'18] show that the buffered k-MinHash turns out to be competitive in a wide and relevant range of the online input parameters.},
+booktitle = {Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining},
+pages = {79–87},
+numpages = {9},
+keywords = {data sketches, dynamic data streams, jaccard similarity estimation, minhashing, probabilistic/amortized analysis of algorithms},
+location = {Hannover, Germany},
+series = {WSDM '25}
+}
+
+
+
+@article{bilò2023finding,
+title = {Finding diameter-reducing shortcuts in trees},
+journal = {Journal of Computer and System Sciences},
+volume = {153},
+pages = {103658},
+year = {2025},
+issn = {0022-0000},
+doi = {https://doi.org/10.1016/j.jcss.2025.103658},
+url = {https://www.sciencedirect.com/science/article/pii/S0022000025000406},
+author = {Davide Bilò and Luciano Gualà and Stefano Leucci and Luca {Pepè Sciarria}},
+keywords = {Tree diameter augmentation, Fast diameter computation, Approximation algorithms, Time-efficient algorithms},
+abstract = {In the k-Diameter-Optimally Augmenting Tree Problem we are given a tree T of n vertices embedded in an unknown metric space. An oracle can report the cost of any edge in constant time, and we want to augment T with k shortcuts to minimize the resulting diameter. When k=1, O(nlog⁡n)-time algorithms exist for paths and trees. We show that o(n2) queries cannot provide a better than 10/9-approximation for trees when k≥3. For any constant ε>0, we design a linear-time (1+ε)-approximation algorithm for paths when k=o(log⁡n), thus establishing a dichotomy between paths and trees for k≥3. Our algorithm employs an ad-hoc data structure, which we also use in a linear-time 4-approximation algorithm for trees, and to compute the diameter of (possibly non-metric) graphs with n+k−1 edges in time O(nklog⁡n).}
+}
+
+@InProceedings{CONFERENCEbilò2023finding,
+author="Bil{\`o}, Davide
+and Gual{\`a}, Luciano
+and Leucci, Stefano
+and Sciarria, Luca Pep{\`e}",
+editor="Morin, Pat
+and Suri, Subhash",
+title="Finding Diameter-Reducing Shortcuts in Trees",
+booktitle="Algorithms and Data Structures",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="164--178",
+abstract="In the k-Diameter-Optimally Augmenting Tree Problem we are given a tree T of n vertices as input. The tree is embedded in an unknown metric space and we have unlimited access to an oracle that, given two distinct vertices u and v of T, can answer queries reporting the cost of the edge (u, v) in constant time. We want to augment T with k shortcuts in order to minimize the diameter of the resulting graph.",
+isbn="978-3-031-38906-1"
+}
+
+
+@misc{ARXIVbilò2023finding,
+      title={Finding Diameter-Reducing Shortcuts in Trees}, 
+      author={Davide Bilò and Luciano Gualà and Stefano Leucci and Luca Pepè Sciarria},
+      year={2023},
+      eprint={2305.17385},
+      archivePrefix={arXiv},
+      primaryClass={cs.DS},
+      url={https://arxiv.org/abs/2305.17385}, 
+}
+
+
+
+@article{acuna2021afamily, title={A family of tree-based generators for bubbles in directed graphs}, volume={25}, url={https://jgaa.info/index.php/jgaa/article/view/paper572}, DOI={10.7155/jgaa.00572}, abstractNote={Bubbles are pairs of internally vertex-disjoint $(s, t)$-paths in a directed graph.
+In de Bruijn graphs built from reads of RNA and DNA data, bubbles represent interesting biological events, such as alternative
+splicing (AS) and allelic differences (SNPs and indels).
+However, the set of all bubbles in a de Bruijn graph built from real data is usually too large to be efficiently enumerated
+and analysed in practice. In particular, despite significant research done in this area, listing bubbles still remains the main bottleneck for tools that detect AS events in a reference-free context. Recently, in &amp;lt;a href=&amp;quot;https://doi.org/10.1007/s00453-019-00619-z&amp;quot;&amp;gt;[Acuña et al., Algorithmica 2020]&amp;lt;/a&amp;gt; the concept of a bubble generator was introduced as a way for obtaining a compact representation of the bubble space of a graph. Although this bubble generator was quite effective in finding AS events, preliminary experiments showed that it is about 5 times slower than state-of-art methods. In this paper we propose a new family of bubble generators which improve substantially on previous work: bubble generators in this new family are about two orders of magnitude faster and are still able to achieve similar precision in identifying AS events. To highlight the practical value of our new bubble generators, we also report some experimental results on real datasets. &amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt; &amp;lt;b&amp;gt;Keywords: bubble generator, directed graphs, alternative splicing&amp;lt;/b&amp;gt;}, number={1}, journal={Journal of Graph Algorithms and Applications}, author={Acuña, Vicente and Soares de Lima, Leandro Ishi and Italiano, Giuseppe and Pepè Sciarria, Luca and Sagot, Marie-France and Sinaimeri, Blerina}, year={2021}, month={Jan.}, pages={563–580} }
+
+
+
+@inproceedings{CONFERENCEacuna2021afamily,
+  author       = {Vicente Acu{\~{n}}a and
+                  Leandro Lima and
+                  Giuseppe F. Italiano and
+                  Luca Pep{\`{e}} Sciarria and
+                  Marie{-}France Sagot and
+                  Blerina Sinaimeri},
+  editor       = {Leszek Gasieniec and
+                  Ralf Klasing and
+                  Tomasz Radzik},
+  title        = {A Family of Tree-Based Generators for Bubbles in Directed Graphs},
+  booktitle    = {Combinatorial Algorithms - 31st International Workshop, {IWOCA} 2020,
+                  Bordeaux, France, June 8-10, 2020, Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {12126},
+  pages        = {17--29},
+  publisher    = {Springer},
+  year         = {2020},
+  url          = {https://doi.org/10.1007/978-3-030-48966-3\_2},
+  doi          = {10.1007/978-3-030-48966-3\_2},
+  timestamp    = {Fri, 10 Jul 2026 14:28:56 +0200},
+  biburl       = {https://dblp.org/rec/conf/iwoca/AcunaLISSS20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+
+@inproceedings{pads/Sciarria26a,
+  author       = {Luca Pep{\`{e}} Sciarria},
+  editor       = {Nikolas Popper and
+                  Adelinde M. Uhrmacher and
+                  Srikanth B. Yoginath},
+  title        = {Reproducibility Report for the Paper: "Grid Checkpointing in Speculative
+                  Simulation'},
+  booktitle    = {Proceedings of the 40th {ACM} {SIGSIM} International Conference on
+                  Principles of Advanced Discrete Simulation, {SIGSIM-PADS} 2026, Vienna,
+                  Austria, June 24-26, 2026},
+  pages        = {208--212},
+  publisher    = {{ACM}},
+  year         = {2026},
+  url          = {https://doi.org/10.1145/3806789.3816103},
+  doi          = {10.1145/3806789.3816103},
+  timestamp    = {Mon, 03 Aug 2026 20:41:38 +0200},
+  biburl       = {https://dblp.org/rec/conf/pads/Sciarria26a.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{pads/Sciarria26,
+  author       = {Luca Pep{\`{e}} Sciarria},
+  editor       = {Nikolas Popper and
+                  Adelinde M. Uhrmacher and
+                  Srikanth B. Yoginath},
+  title        = {Reproducibility Report for the Paper: "EBA: an Event-Buffer Allocator
+                  Specifically Suited for Parallel Discrete Event Simulation"},
+  booktitle    = {Proceedings of the 40th {ACM} {SIGSIM} International Conference on
+                  Principles of Advanced Discrete Simulation, {SIGSIM-PADS} 2026, Vienna,
+                  Austria, June 24-26, 2026},
+  pages        = {199--203},
+  publisher    = {{ACM}},
+  year         = {2026},
+  url          = {https://doi.org/10.1145/3806789.3816101},
+  doi          = {10.1145/3806789.3816101},
+  timestamp    = {Mon, 03 Aug 2026 20:41:38 +0200},
+  biburl       = {https://dblp.org/rec/conf/pads/Sciarria26.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
