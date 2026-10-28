@@ -88,6 +88,10 @@ plugins:
     order: 80
   - source: "@quartz-community/citations"
     enabled: false
+    options:
+      bibliographyFile: "./content/references.bib"
+      csl: apa
+      linkCitations: true
     order: 85
   - source: "@quartz-community/hard-line-breaks"
     enabled: false
