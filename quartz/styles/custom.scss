@@ -1,3 +1,71 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+.profile-figure {
+  width: 220px; // controls width of both photo and caption
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+
+  @media (max-width: 600px) {
+    float: none;
+    margin: 0 auto 1rem auto;
+  }
+
+  .profile-photo-swap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; // 1 / 1 for square, or e.g. 3 / 4 for portrait
+    border-radius: 12px; // change to 50% for a circle
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0; // overrides Quartz's default img margin
+    }
+
+    .photo-hover {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover .photo-hover,
+    &:focus .photo-hover {
+      opacity: 1;
+    }
+  }
+
+  figcaption {
+    display: grid; // puts both <span>s in the same cell so they overlap cleanly
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--gray);
+    text-align: center;
+
+    span {
+      grid-area: 1 / 1;
+      transition: opacity 0.3s ease;
+    }
+
+    span:last-child {
+      opacity: 0;
+    }
+  }
+
+  // When the photo is hovered/tapped, fade out the 1st span and fade in the 2nd
+  &:has(.profile-photo-swap:hover, .profile-photo-swap:focus) figcaption {
+    span:first-child {
+      opacity: 0;
+    }
+
+    span:last-child {
+      opacity: 1;
+    }
+  }
+}
