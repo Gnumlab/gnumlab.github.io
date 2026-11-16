@@ -29,7 +29,7 @@ In the future I will add some of my creations here.
 I am also a bookworm. I love reading. My favourite genres are historical fiction and fantasy. I am a big fun of **Patrick O'Brian** novels and **Malazan** epopea, and I'm also a **Terry Pratchett** fan!\
 I'm currently reading **Stonewielder** by Ian Esslemont.
 
-##Links:
+## Links:
 [Google Scholar](https://scholar.google.com/citations?user=dW4yzM4AAAAJ) | [DBLP](https://dblp.org/pid/266/2241.html) | [GitHub](https://github.com/Gnumlab) | [ORCID] (https://orcid.org/0000-0003-4432-6099)
 
 ---
