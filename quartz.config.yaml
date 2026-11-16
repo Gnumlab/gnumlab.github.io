@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: gnumlab.github.io
+  baseUrl: gnumlab.github.io/luca-pepesciarria
   ignorePatterns:
     - private
     - templates
